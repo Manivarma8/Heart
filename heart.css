@@ -1,0 +1,43 @@
+
+:root{
+    --abs : absolute;
+    --dis : flex;
+    --justi : center;
+    --full_ht : 100vh;
+    --left : 50%;
+    --right : 50%;
+    --traverse : translate(-50%, -50%);
+    --size : 100px;
+    --backgrounds :black;
+    --backimg : url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");
+    /* --backimg : url("pic1.jpg"); */
+    --repeat : no-repeat; 
+    --fullimg : cover;
+}
+
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: var(--backgrounds);
+    display : var(--dis);
+    height : var(--full_ht);
+    justify-content: var(--justi);
+    align-items: var(--justi);
+}
+
+
+.happy, span{
+    background: var(--backimg);
+    width : var(--size);
+    height : var(--size);
+    position: var(--abs);
+    left : var(--left);
+    top : var(--left);
+    pointer-events: none;
+    transform : var(--traverse);
+    background-size: var(--fullimg);
+    background-repeat: var(--repeat);
+}
